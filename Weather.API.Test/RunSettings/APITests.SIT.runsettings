@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+  <TestRunParameters>
+    <Parameter name="BaseUrl" value="https://api.openweathermap.org/data/2.5/" />
+    <Parameter name="Environment" value="SIT" />
+    <Parameter name="ApiKey" value="ApiKeyToBeReplaced"/>
+  </TestRunParameters>
+</RunSettings>
