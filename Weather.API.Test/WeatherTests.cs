@@ -2,6 +2,7 @@ using System.Net;
 using System.Net.Http.Json;
 using System.Text.Json;
 using Weather.API.Models.WeatherResponse;
+using Weather.API.Models;
 using Weather.API.Tests.TestBase;
 using Weather.API.Tests.TestHelpers;
 
