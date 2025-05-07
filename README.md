@@ -24,12 +24,17 @@ Before running the tests, make sure you have the following:
 ### 2. Set ApiKey value
 - Set ApiKey value in chosen .runSettings file
 
-### 3. Run The Tests
+### 3. Run The Tests using terminal/command prompt
 - Open a terminal/command prompt in the root directory of the project.
-- Execute the tests using the dotnet test command
+- Execute the tests using the dotnet test command.
 `dotnet test --settings TestSettings/your-selected-settings.runsettings`
 
-### 4. Review Test Report
+### 4. Run The Tests using Test Explorer
+- In Visual Studio select `Test -> Test Explorer`.
+- Run all tests.
+- `APITests.Local.runsettings` are default for `Weather.API.Tests` project.
+
+### 5. Review Test Report
 - The test report will be generated in the root folder of the solution.
 - The report will be named 'TestReport.html'.
 - Open the 'TestReport.html' file in a web browser to review the test results.
