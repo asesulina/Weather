@@ -11,7 +11,7 @@ public class ExtentReportManager
     [OneTimeSetUp]
     public void SetUp()
     {
-        ExtentSparkReporter htmlReporter = new ExtentSparkReporter("extentReport.html");
+        ExtentSparkReporter htmlReporter = new ExtentSparkReporter("..\\..\\TestReport.html");
         extent = new ExtentReports();
         extent.AttachReporter(htmlReporter);
     }
