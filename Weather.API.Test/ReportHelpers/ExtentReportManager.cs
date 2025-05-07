@@ -7,7 +7,6 @@ public class ExtentReportManager
     public static ExtentReports extent;
     public static ExtentTest? test;
 
-
     [OneTimeSetUp]
     public void SetUp()
     {
