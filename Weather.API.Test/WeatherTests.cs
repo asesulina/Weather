@@ -168,8 +168,6 @@ namespace Weather.API.Tests
             Assert.That(weatherResponse.Main.Temp_Max, Is.InRange(minTemp, maxTemp), "Temperature is outside valid range.");
             Assert.That(weatherResponse.Main.Humidity, Is.InRange(0, 100), "Humidity is outside valid range.");
             Assert.That(weatherResponse.Weather[0].Description, Is.Not.Empty, "Weather description should not be empty.");
-            Assert.That(weatherResponse.Coord.Lat, Is.Not.EqualTo(0), "Latitude should not be zero.");
-            Assert.That(weatherResponse.Coord.Lon, Is.Not.EqualTo(0), "Longitude should not be zero.");
             Assert.That(weatherResponse.Sys.Country, Is.EqualTo(RandomCity.Country), "Country mismatch.");
             Assert.That(weatherResponse.Id, Is.EqualTo(RandomCity.Id), "City Id mismatch.");
             Assert.That(weatherResponse.Coord.Lat, Is.EqualTo(RandomCity.Coord.Lat).Within(0.01), "Latitude mismatch.");
