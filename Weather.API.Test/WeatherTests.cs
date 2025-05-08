@@ -44,7 +44,6 @@ namespace Weather.API.Tests
             AssertValidResponseData(weatherResponse, TemperatureRanges.StandardMin, TemperatureRanges.StandardMax);
         }
 
-
         [TestCase("xml", "application/xml")]
         [TestCase("html", "text/html")]
         public async Task GET_WeatherById_ValidValueByMode_ReturnsValidData(string mode, string modeValue)
