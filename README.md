@@ -8,6 +8,7 @@ Before running the tests, make sure you have the following:
 
 - .NET 8.0 SDK (or higher) installed on your machine.
 - NUnit test runner (can be installed via Visual Studio or .NET CLI).
+- ExtentReports (can be installed via Visual Studio or .NET CLI).
 - **API Key** for OpenWeather API.
 
 ## Optional Test Data setup
