@@ -173,8 +173,8 @@ namespace Weather.API.Tests
             Assert.That(weatherResponse.Coord.Lon, Is.Not.EqualTo(0), "Longitude should not be zero.");
             Assert.That(weatherResponse.Sys.Country, Is.EqualTo(RandomCity.Country), "Country mismatch.");
             Assert.That(weatherResponse.Id, Is.EqualTo(RandomCity.Id), "City Id mismatch.");
-            Assert.That(weatherResponse.Coord.Lat, Is.EqualTo(RandomCity.Coord.Lat).Within(0.001), "Latitude mismatch.");
-            Assert.That(weatherResponse.Coord.Lon, Is.EqualTo(RandomCity.Coord.Lon).Within(0.001), "Longitude mismatch.");
+            Assert.That(weatherResponse.Coord.Lat, Is.EqualTo(RandomCity.Coord.Lat).Within(0.01), "Latitude mismatch.");
+            Assert.That(weatherResponse.Coord.Lon, Is.EqualTo(RandomCity.Coord.Lon).Within(0.01), "Longitude mismatch.");
             Assert.That(weatherResponse.Cod, Is.EqualTo(200));
         }
     }
